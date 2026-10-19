@@ -1,0 +1,41 @@
+/* ============================================
+   global.css — FORCE RULES
+   (originally inline <style> in index.html head)
+   ============================================ */
+
+/* ===== FORCE CANVAS VISIBLE ===== */
+#bgCanvas {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+    display: block !important;
+    background: transparent !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.loading-screen {
+    z-index: 9999 !important;
+    position: fixed !important;
+    inset: 0 !important;
+}
+
+#mainContent {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Make sure doodles don't block canvas */
+.doodle-overlay {
+    z-index: 0 !important;
+    opacity: 0.3 !important;
+}
+
+/* HTML element needs a background so mode gradients show */
+html {
+    background: var(--bg-primary);
+}
