@@ -662,6 +662,33 @@
     .stats-divider {
         display: none !important;
     }
+
+    .mode-toggle {
+        gap: var(--space-1) !important;
+    }
+
+    .mode-label {
+        font-size: 9px !important;
+        min-width: 3.6em !important;
+    }
+
+    .mode-track {
+        width: 38px !important;
+        height: 20px !important;
+    }
+
+    .mode-handle {
+        width: 14px !important;
+        height: 14px !important;
+    }
+
+    html[data-mode="engineering"] .mode-handle {
+        transform: translateY(-50%) translateX(0) !important;
+    }
+
+    html[data-mode="curious"] .mode-handle {
+        transform: translateY(-50%) translateX(18px) !important;
+    }
 }
 
 /* ===== LANDSCAPE MODE ===== */

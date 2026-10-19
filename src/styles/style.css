@@ -688,11 +688,12 @@ html[data-mode="curious"] .nav-link.active {
 .mode-toggle {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-2);
+    gap: var(--space-3);
     background: transparent;
     border: none;
     padding: 0;
     line-height: 1;
+    cursor: pointer;
 }
 
 .mode-track {
@@ -700,7 +701,8 @@ html[data-mode="curious"] .nav-link.active {
     height: 22px;
     border-radius: 12px;
     position: relative;
-    transition: all var(--base) var(--ease-smooth);
+    transition: background var(--base) var(--ease-smooth),
+                border-color var(--base) var(--ease-smooth);
     flex-shrink: 0;
     border: 1px solid var(--border-color);
     background: var(--bg-surface);
@@ -735,10 +737,11 @@ html[data-mode="curious"] .nav-link.active {
     text-transform: uppercase;
     color: var(--text-muted);
     display: inline-block;
-    width: 5.6em;
+    min-width: 4.6em;
     text-align: right;
     white-space: nowrap;
     line-height: 1;
+    flex-shrink: 0;
 }
 
 /* ===== MODE HINT ===== */
@@ -751,22 +754,24 @@ html[data-mode="curious"] .nav-link.active {
 .mode-hint {
     position: absolute;
     left: 50%;
-    top: calc(100% + 6px);
+    top: 100%;
     transform: translateX(-50%);
-    background: transparent;
-    border: none;
-    padding: 0;
-    font-size: 10px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0 8px;
+    font-size: 8px;
+    line-height: 1.4;
     color: var(--accent-primary);
     white-space: nowrap;
     font-weight: 600;
     letter-spacing: 0.05em;
-    opacity: 0.7;
+    opacity: 0.85;
     animation: modeHintPulse 2.5s ease-in-out infinite;
     cursor: pointer;
     transition: opacity var(--fast) var(--ease-smooth);
     font-family: var(--font-mono);
-    z-index: 5;
+    z-index: 6;
 }
 
 .mode-hint:hover {
@@ -776,6 +781,7 @@ html[data-mode="curious"] .nav-link.active {
 html[data-mode="curious"] .mode-hint {
     opacity: 0;
     visibility: hidden;
+    animation: none;
     transition: opacity var(--base) var(--ease-smooth), visibility var(--base) var(--ease-smooth);
 }
 
