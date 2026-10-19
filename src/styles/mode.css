@@ -115,7 +115,7 @@ html[data-mode="engineering"] .mode-track {
 
 html[data-mode="engineering"] .mode-handle {
     background: var(--accent-primary);
-    transform: translateX(0);
+    transform: translateY(-50%) translateX(0);
 }
 
 html[data-mode="engineering"] .mode-label {
@@ -305,7 +305,7 @@ html[data-mode="curious"] .mode-track {
 
 html[data-mode="curious"] .mode-handle {
     border-radius: 50% !important;
-    transform: translateX(22px);
+    transform: translateY(-50%) translateX(22px);
 }
 
 html[data-mode="curious"] .project-card {

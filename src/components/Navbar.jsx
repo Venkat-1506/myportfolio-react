@@ -98,7 +98,15 @@ export default function Navbar({ mode, toggleMode }) {
                 </span>
               </span>
             </button>
-            <span className="mode-hint" id="modeHint">✨ Try Curious Mode</span>
+            <button
+              type="button"
+              className="mode-hint"
+              id="modeHint"
+              onClick={toggleMode}
+              aria-label="Switch to Curious Mode"
+            >
+              ✨ Try Curious Mode
+            </button>
           </div>
           <button
             className={`header-toggle${menuOpen ? ' open' : ''}`}
