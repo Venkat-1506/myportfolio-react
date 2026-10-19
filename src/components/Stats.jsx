@@ -3,7 +3,7 @@ import { Fragment, useEffect, useRef, useState } from 'react'
 const STATS = [
   { count: 130, suffix: '+', label: 'Problems Solved' },
   { count: 9, label: 'Projects Built' },
-  { count: 13, label: 'Certifications' },
+  { count: 12, label: 'Certifications' },
   { count: 8.7, decimals: 1, label: 'Current CGPA' }
 ]
 
