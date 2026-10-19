@@ -128,6 +128,7 @@ const rawProjects = [
 ]
 
 const rawCertificates = [
+  { title: "IIT Madras Admission Letter", issuer: "IIT Madras", category: "Admission", image: "assets/certificates/IITM-Admission.png", achievement: "BS Data Science & Applications", description: "Official admission letter for the BS in Data Science and Applications program at IIT Madras — confirming enrollment in the Foundation Level of the program." },
   { title: "NPTEL OOP (Elite)", issuer: "NPTEL", category: "Programming", image: "assets/certificates/NPTEL.jpg", achievement: "Elite Grade — 79%", description: "Completed NPTEL's Object-Oriented Programming course with Elite grade (79%), demonstrating strong proficiency in OOP fundamentals, design principles, and problem-solving through rigorous online assessment." },
   { title: "Microsoft Canvas App", issuer: "Microsoft", category: "Cloud", image: "assets/certificates/Microsoft-Canvas-App.png", achievement: "", description: "Earned Microsoft's certification in Canvas App development, covering low-code application building using Power Apps with connectors and business logic." },
   { title: "Microsoft Secure Storage", issuer: "Microsoft", category: "Cloud", image: "assets/certificates/Microsoft-secure-storage.png", achievement: "", description: "Microsoft certification focused on secure cloud storage solutions — data encryption, access management, and compliance in Azure environments." },
