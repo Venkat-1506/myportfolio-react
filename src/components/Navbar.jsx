@@ -89,13 +89,13 @@ export default function Navbar({ mode, toggleMode }) {
               onClick={toggleMode}
               aria-label="Toggle theme mode"
             >
+              <span className="mode-label" id="modeLabel">
+                {mode === 'engineering' ? 'Engineering' : 'Curious'}
+              </span>
               <span className="mode-track">
                 <span className="mode-handle">
                   <span className="mode-icon">{mode === 'engineering' ? '⚙' : '✦'}</span>
                 </span>
-              </span>
-              <span className="mode-label" id="modeLabel">
-                {mode === 'engineering' ? 'Engineering' : 'Curious'}
               </span>
             </button>
             <span className="mode-hint" id="modeHint">✨ Try Curious Mode</span>
