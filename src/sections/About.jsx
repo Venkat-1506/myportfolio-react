@@ -1,9 +1,9 @@
 import { IconLocation, IconCerts, IconAbout } from '../components/icons'
 
 const DETAILS = [
-  { Icon: IconLocation, text: 'India' },
+  { Icon: IconLocation, text: 'Chennai, Tamil Nadu, India' },
   { Icon: IconCerts, text: 'IIT Madras BS Data Science' },
-  { Icon: IconAbout, text: 'Building since 2023' }
+  { Icon: IconAbout, text: 'CGPA 8.7 · B.E. CSE' }
 ]
 
 export default function About() {
@@ -19,13 +19,13 @@ export default function About() {
               </h2>
             </div>
             <p className="about-desc">
-              I'm a Computer Science Engineering student at IIT Madras, pursuing a BS in Data Science alongside. I build systems that turn raw data into meaningful decisions — from full-stack web apps to data pipelines.
+              I'm a Computer Science Engineering student and an IIT Madras BS Data Science learner, with hands-on experience in web development and machine learning projects. I turn ideas into practical, working software — from career platforms to predictive models.
             </p>
             <p className="about-desc">
-              My journey started with curiosity about how things work, and evolved into a passion for software engineering, data engineering, and problem-solving. I've built projects ranging from campus lost-and-found portals to handwritten digit recognition systems.
+              My toolkit spans Java, Python, and JavaScript, and I've solved 130+ problems on LeetCode to keep my fundamentals sharp. I enjoy the full loop: designing the UI, wiring the logic, and shipping it to production.
             </p>
             <p className="about-desc">
-              Currently diving deep into data engineering fundamentals — SQL, PostgreSQL, Pandas, and ETL pipelines — while continuing to build practical solutions that solve real-world problems.
+              Currently going deeper into data engineering and cloud fundamentals while building practical solutions that solve real-world problems and sharpen my craft.
             </p>
             <div className="about-details">
               {DETAILS.map(({ Icon, text }) => (

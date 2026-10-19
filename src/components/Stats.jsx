@@ -1,12 +1,13 @@
 import { Fragment, useEffect, useRef, useState } from 'react'
 
 const STATS = [
-  { count: 130, label: 'Problems Solved' },
-  { count: 7, label: 'Projects Built' },
-  { count: 12, label: 'Certifications' }
+  { count: 130, suffix: '+', label: 'Problems Solved' },
+  { count: 9, label: 'Projects Built' },
+  { count: 13, label: 'Certifications' },
+  { count: 8.7, decimals: 1, label: 'Current CGPA' }
 ]
 
-function Counter({ target, start }) {
+function Counter({ target, suffix = '', decimals = 0, start }) {
   const [value, setValue] = useState(0)
   const [counting, setCounting] = useState(false)
 
@@ -23,18 +24,23 @@ function Counter({ target, start }) {
       const eased = 1 - Math.pow(1 - progress, 3)
       current = eased * target
       if (current < target) {
-        setValue(Math.floor(current))
+        setValue(target % 1 === 0 ? Math.floor(current) : current.toFixed(decimals))
         raf = requestAnimationFrame(update)
       } else {
-        setValue(target)
+        setValue(target % 1 === 0 ? Math.floor(target) : target.toFixed(decimals))
         setCounting(true)
       }
     }
     raf = requestAnimationFrame(update)
     return () => cancelAnimationFrame(raf)
-  }, [start, target])
+  }, [start, target, decimals])
 
-  return <span className={`stats-number${counting ? ' counting' : ''}`}>{value}</span>
+  return (
+    <span className={`stats-number${counting ? ' counting' : ''}`}>
+      {value}
+      {suffix && <span className="stats-suffix">{suffix}</span>}
+    </span>
+  )
 }
 
 export default function Stats() {
@@ -64,7 +70,7 @@ export default function Stats() {
           {STATS.map((stat, i) => (
             <Fragment key={stat.label}>
               <div className="stats-item">
-                <Counter target={stat.count} start={started} />
+                <Counter target={stat.count} suffix={stat.suffix} decimals={stat.decimals} start={started} />
                 <span className="stats-label">{stat.label}</span>
               </div>
               {i < STATS.length - 1 && <div className="stats-divider"></div>}

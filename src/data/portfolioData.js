@@ -1,5 +1,33 @@
 const rawProjects = [
   {
+    id: "rolecompass",
+    title: "RoleCompass",
+    featured: true,
+    problem: "Candidates struggle to understand how well their skills fit a role and what to learn next.",
+    challenge: "Building a career platform with role-based access control and persistent state — entirely on the frontend.",
+    solution: "Responsive career platform connecting candidates and employers, featuring job discovery, role-fit scoring, skill-gap analysis, learning roadmaps, and application tracking. Implemented role-based route guards, React Context state management, and localStorage persistence; deployed on Netlify.",
+    features: ["Job Discovery", "Role-Fit Scoring", "Skill-Gap Analysis", "Learning Roadmaps", "Application Tracking", "Role-Based Route Guards"],
+    techStack: ["React", "Vite", "React Router", "JavaScript", "CSS"],
+    lessonsLearned: "Role-based route guards taught me how to think about access control even in a serverless app — protecting routes with React Context and persisting sessions in localStorage made the UX feel like a real product.",
+    githubUrl: "https://github.com/Venkat-1506",
+    liveUrl: "",
+    previewImage: "assets/projects/RoleCompass.png"
+  },
+  {
+    id: "diabetes-ml",
+    title: "Diabetes Prediction Using ML",
+    featured: true,
+    problem: "Early indicators of diabetes in medical data are hard to spot without a predictive model.",
+    challenge: "Training a reliable classifier on a small medical dataset and making it usable by non-programmers.",
+    solution: "Diabetes prediction model using Logistic Regression on a medical CSV dataset with an 80/20 train-test split. Features are separated from the target, the model is evaluated with accuracy score (~74% on test data), and a command-line interface accepts patient inputs for instant predictions.",
+    features: ["Logistic Regression", "80/20 Train-Test Split", "~74% Test Accuracy", "CLI Predictions", "CSV Dataset Preprocessing"],
+    techStack: ["Python", "Pandas", "Scikit-learn"],
+    lessonsLearned: "Data leakage and train-test hygiene matter more than model choice — a simple Logistic Regression with clean preprocessing beat a fancier model I tried first, and wrapping it in a CLI made it shareable.",
+    githubUrl: "https://github.com/Venkat-1506",
+    liveUrl: "",
+    previewImage: "assets/projects/Diabetes-Prediction.png"
+  },
+  {
     id: "finder",
     title: "FIND-ER",
     featured: true,
@@ -100,13 +128,14 @@ const rawProjects = [
 ]
 
 const rawCertificates = [
-  { title: "NPTEL Elite", issuer: "NPTEL", category: "Programming", image: "assets/certificates/NPTEL.jpg", achievement: "Elite Grade", description: "Completed NPTEL's elite-level certification demonstrating strong proficiency in programming fundamentals and problem-solving techniques through rigorous online assessment." },
+  { title: "NPTEL OOP (Elite)", issuer: "NPTEL", category: "Programming", image: "assets/certificates/NPTEL.jpg", achievement: "Elite Grade — 79%", description: "Completed NPTEL's Object-Oriented Programming course with Elite grade (79%), demonstrating strong proficiency in OOP fundamentals, design principles, and problem-solving through rigorous online assessment." },
   { title: "Microsoft Canvas App", issuer: "Microsoft", category: "Cloud", image: "assets/certificates/Microsoft-Canvas-App.png", achievement: "", description: "Earned Microsoft's certification in Canvas App development, covering low-code application building using Power Apps with connectors and business logic." },
   { title: "Microsoft Secure Storage", issuer: "Microsoft", category: "Cloud", image: "assets/certificates/Microsoft-secure-storage.png", achievement: "", description: "Microsoft certification focused on secure cloud storage solutions — data encryption, access management, and compliance in Azure environments." },
   { title: "Java Certification", issuer: "HackerRank", category: "Programming", image: "assets/certificates/Hackerrank-java.png", achievement: "", description: "HackerRank skill certification validating core Java proficiency including OOP, collections, exception handling, data structures, and algorithmic problem solving." },
   { title: "FreeCodeCamp (v9)", issuer: "FreeCodeCamp", category: "Frontend", image: "assets/certificates/Freecodecamp-v9.png", achievement: "", description: "FreeCodeCamp's responsive web design certification (v9) covering HTML5, CSS3, Flexbox, CSS Grid, and accessible, mobile-first web development." },
   { title: "FreeCodeCamp (v8)", issuer: "FreeCodeCamp", category: "Frontend", image: "assets/certificates/Freecodecamp-v8.png", achievement: "", description: "FreeCodeCamp's legacy responsive web design certification (v8) with foundational training in HTML, CSS, visual design, and building real-world projects." },
-  { title: "Senior Typewriting", issuer: "Government", category: "Professional", image: "assets/certificates/Typewriting-senior.png", achievement: "First Class With Distinction", description: "Government-certified Senior Grade Typewriting with First Class Distinction, demonstrating high-speed accuracy and professional document preparation skills." },
+  { title: "Typewriting Junior & Senior", issuer: "Government", category: "Professional", image: "assets/certificates/Typewriting-senior.png", achievement: "First Class with Distinction", description: "Government-certified Typewriting at both Junior and Senior Grade with First Class Distinction, demonstrating high-speed accuracy and professional document preparation skills." },
+  { title: "LeetCode — 130+ Solved", issuer: "LeetCode", category: "Achievement", image: "assets/certificates/Leetcode-130.png", achievement: "130+ Problems Solved", description: "Solved over 130 problems on LeetCode across arrays, strings, hashing, and core data structures — consistent practice in algorithmic thinking and problem-solving." },
   { title: "HTML Certification", issuer: "Udemy", category: "Frontend", image: "assets/certificates/Udemy-HTML.png", achievement: "", description: "Udemy certification covering modern HTML5 — semantic markup, forms, multimedia, accessibility best practices, and structuring web content." },
   { title: "CSS Certification", issuer: "Udemy", category: "Frontend", image: "assets/certificates/Udemy-CSS.png", achievement: "", description: "Udemy certification in modern CSS3 including Flexbox, Grid, animations, responsive design patterns, and cross-browser styling techniques." },
   { title: "Java & Python", issuer: "Training Program", category: "Programming", image: "assets/certificates/java-python.png", achievement: "", description: "Structured training program covering both Java and Python programming — OOP principles in Java and scripting, data structures, and automation in Python." },
@@ -116,9 +145,9 @@ const rawCertificates = [
 
 const rawSkills = [
   { title: "Languages", items: ["Java", "Python", "JavaScript", "SQL"] },
-  { title: "Frontend", items: ["HTML5", "CSS3", "Responsive Design"] },
-  { title: "Tools", items: ["Git", "GitHub", "VS Code", "Netlify"] },
-  { title: "Data", items: ["Pandas", "Data Analysis"] },
+  { title: "Web Development", items: ["HTML5", "CSS3", "React", "Vite", "React Router", "Responsive Design", "Chart.js"] },
+  { title: "Data & Tools", items: ["Pandas", "NumPy", "Scikit-learn", "Git", "GitHub", "VS Code", "Netlify"] },
+  { title: "Core Concepts", items: ["Data Structures", "OOP", "MVC Architecture", "Debugging", "Problem-Solving"] },
   { title: "Currently Learning", items: ["Data Engineering", "Cloud Computing", "PostgreSQL"] }
 ]
 
@@ -134,10 +163,41 @@ const rawSocial = {
 
 const toAsset = (p) => (p && !p.startsWith('/') && !p.startsWith('http') ? '/' + p : p)
 
+const rawEducation = [
+  {
+    degree: "B.E. Computer Science and Engineering",
+    institution: "Prince Dr. K. Vasudevan College of Engineering and Technology, Chennai",
+    period: "Expected 2029",
+    score: "CGPA: 8.7",
+    highlight: true
+  },
+  {
+    degree: "BS in Data Science and Applications",
+    institution: "Indian Institute of Technology (IIT) Madras",
+    period: "In Progress",
+    score: "Foundation Level — 2 courses completed",
+    highlight: true
+  },
+  {
+    degree: "Higher Secondary (Class XII)",
+    institution: "Sree Venkateshwarar Matriculation Higher Secondary School",
+    period: "Completed",
+    score: "87.167%",
+    highlight: false
+  }
+]
+
+const rawLanguages = [
+  { name: "Tamil", level: "Native" },
+  { name: "English", level: "Proficient" }
+]
+
 const portfolioData = {
   projects: rawProjects.map((p) => ({ ...p, previewImage: toAsset(p.previewImage) })),
   certificates: rawCertificates.map((c) => ({ ...c, image: toAsset(c.image) })),
   skills: rawSkills,
+  education: rawEducation,
+  languages: rawLanguages,
   social: rawSocial,
   beyondCoding: [
     { title: "Chess, Cricket & Travel", description: "I play chess and cricket, love exploring new things, and enjoy travelling whenever I get the chance.", icon: "compass" },

@@ -7,9 +7,9 @@ import { IconGithub, IconLinkedin, IconLeetCode, IconMail, IconDownload } from '
 
 const ROLES = [
   'Computer Science Engineering Student',
-  'Data Engineering Enthusiast',
-  'Full-Stack Builder',
-  'Problem Solver'
+  'Aspiring Software Developer',
+  'IIT Madras Data Science Learner',
+  'Full-Stack Builder'
 ]
 
 const HERO_SOCIAL = [
@@ -66,10 +66,10 @@ export default function Hero({ mode }) {
             </h1>
             <div className="hero-role">
               <p className="hero-typewriter" id="heroTypewriter">{typed}</p>
-              <p className="hero-school">Computer Science Engineering Student · IIT Madras BS Data Science</p>
+              <p className="hero-school">Computer Science Engineering Student · Aspiring Software Developer · IIT Madras BS Data Science</p>
             </div>
             <p className="hero-tagline">
-              Building systems that turn raw data into <span className="accent-underline">meaningful decisions.</span>
+              Turning ideas into <span className="accent-underline">practical software.</span>
             </p>
             <div className="hero-actions">
               <a href="#projects" className="btn-primary btn-glow" onClick={(e) => goSection(e, 'projects')}>View Projects</a>

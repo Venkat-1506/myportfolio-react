@@ -4,8 +4,12 @@ import useMode from './hooks/useMode'
 import useCursor from './hooks/useCursor'
 import useReveal from './hooks/useReveal'
 import useBackgroundCanvas from './hooks/useBackgroundCanvas'
+import useScrollProgress from './hooks/useScrollProgress'
+import useTilt from './hooks/useTilt'
+import useMagnetic from './hooks/useMagnetic'
 import SvgSprite from './components/SvgSprite'
 import LoadingScreen from './components/LoadingScreen'
+import ScrollProgress from './components/ScrollProgress'
 import Navbar from './components/Navbar'
 import SocialSidebar from './components/SocialSidebar'
 import MobileSocialStrip from './components/MobileSocialStrip'
@@ -27,9 +31,13 @@ function App() {
   useCursor(mode)
   useReveal(null)
   useBackgroundCanvas(canvasRef)
+  useTilt()
+  useMagnetic()
+  const progress = useScrollProgress()
 
   return (
     <>
+      <ScrollProgress progress={progress} />
       <ScrollManager />
       <SvgSprite />
       <LoadingScreen />

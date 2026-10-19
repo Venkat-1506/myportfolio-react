@@ -8,12 +8,19 @@ const DEVICON_MAP = {
   SQL: 'mysql',
   HTML5: 'html5',
   CSS3: 'css3',
+  React: 'react',
+  'React Router': 'reactrouter',
+  Vite: 'vitejs',
+  'Responsive Design': 'css3',
+  'Chart.js': 'chartjs',
+  NumPy: 'numpy',
+  'Scikit-learn': 'scikitlearn',
+  Pandas: 'pandas',
   Git: 'git',
   GitHub: 'github',
   'VS Code': 'vscode',
   Netlify: 'netlify',
-  PostgreSQL: 'postgresql',
-  Pandas: 'pandas'
+  PostgreSQL: 'postgresql'
 }
 
 function getInitials(name) {

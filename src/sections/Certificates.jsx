@@ -3,6 +3,20 @@ import { Link } from 'react-router-dom'
 import data from '../data/portfolioData'
 import CertModal from '../components/CertModal'
 
+function CertImage({ cert }) {
+  const [failed, setFailed] = useState(false)
+
+  if (failed) {
+    return (
+      <div className="cert-image-fallback" data-issuer={cert.issuer}>
+        <span>{cert.title.charAt(0)}</span>
+      </div>
+    )
+  }
+
+  return <img src={cert.image} alt={cert.title} loading="lazy" onError={() => setFailed(true)} />
+}
+
 export default function Certificates() {
   const [selected, setSelected] = useState(null)
 
@@ -27,7 +41,7 @@ export default function Certificates() {
                 setSelected(cert)
               }}
             >
-              <img src={cert.image} alt={cert.title} loading="lazy" />
+              <CertImage cert={cert} />
               <div className="info">
                 <h4>{cert.title}</h4>
                 <p>{cert.issuer}</p>
