@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio built with **React 19**, **Vite**, and **React Router**. It showcases my projects, certificates, skills, resume, and contact info — with a dual-mode UI (`engineering` / `creative`), animated background canvas, custom cursor, reveal-on-scroll animations, and a loading screen.
 
-**Live site:** [myportfolio-react.netlify.app](https://myportfolio-react.netlify.app)
+**Live site:** [venkatasaarathy.netlify.app](https://venkatasaarathy.netlify.app/)
 
 ## Features
 
