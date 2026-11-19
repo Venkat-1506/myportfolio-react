@@ -19,13 +19,13 @@ export default function About() {
               </h2>
             </div>
             <p className="about-desc">
-              I'm a Computer Science Engineering student and an IIT Madras BS Data Science learner, with hands-on experience in web development and machine learning projects. I turn ideas into practical, working software — from career platforms to predictive models.
+              I'm a Computer Science and Engineering undergraduate at Prince Dr. K. Vasudevan College of Engineering &amp; Technology, alongside pursuing the BS Degree in Data Science and Applications from IIT Madras. I enjoy building practical software solutions and understanding how technology can solve real-world problems. My experience includes developing React-based web applications, working with Java and Python, and exploring data-driven systems.
             </p>
             <p className="about-desc">
-              My toolkit spans Java, Python, and JavaScript, and I've solved 130+ problems on LeetCode to keep my fundamentals sharp. I enjoy the full loop: designing the UI, wiring the logic, and shipping it to production.
+              My interests lie at the intersection of Software Engineering and Data Engineering. I'm currently strengthening my foundations in SQL, PostgreSQL, Python, Pandas, and data processing concepts while exploring how data pipelines transform raw information into meaningful insights. From building student-focused platforms to experimenting with AI-powered applications, I believe in learning by building, improving through experimentation, and turning ideas into working solutions.
             </p>
             <p className="about-desc">
-              Currently going deeper into data engineering and cloud fundamentals while building practical solutions that solve real-world problems and sharpen my craft.
+              I'm continuously expanding my technical skills and looking forward to building impactful software and data-driven products.
             </p>
             <div className="about-details">
               {DETAILS.map(({ Icon, text }) => (
